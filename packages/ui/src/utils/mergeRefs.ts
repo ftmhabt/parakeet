@@ -1,0 +1,1 @@
+export const mergeRefs = (...refs: any[]) => (node: any) => refs.forEach((r) => { if (!r) return; if (typeof r === "function") r(node); else r.current = node })
