@@ -1,1 +1,14 @@
-{"name":"parakeet","private":true,"workspaces":["packages/*"]}
+{
+  "name": "parakeet",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm --filter docs dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
